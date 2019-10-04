@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Encu&eacute;ntranos</title>
-    
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-        #mapa {
-            height: 100%;
-        }
-
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="mapa"></div>
-    <script>
-
-        var map, infoWindow;
+var map, infoWindow;
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('mapa'), {
@@ -61,10 +35,3 @@
                 'Error: Tu navegador no soporta Geolocalización.');
             infoWindow.open(map);
         }
-    </script>
-    <script 
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVEEKq9nISF_Z3FUTemZOHGLjQVB0syDA&callback=initMap">
-        </script>
-</body>
-
-</html>
